@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UL Test</title>
+  <script>
+    function openLink() {
+      var url = document.getElementById("urlField").value;
+      if (url) {
+        var a = document.createElement('a');
+        a.href = url;
+        a.innerText = "dynamic";
+        document.body.appendChild(a);
+        a.click();
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="urlField" style="width:90%">
+  <button id='deeplink_here' onclick="openLink()">Go</button>
+</body>
+</html>
